@@ -23,5 +23,5 @@ def hacer_reporte(base_biblio):
                 para_archivo.append({autor["Nombre"]:contador})
 
     with open("Reportes_biblioteca_mundo_libro.json","w") as archivo_reporte:
-        json.dump(para_archivo,archivo_reporte)
+        json.dump(para_archivo,archivo_reporte,indent=4)
     
